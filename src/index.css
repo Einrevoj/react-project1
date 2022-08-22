@@ -1,13 +1,127 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+/* home styling */
+.home {
+    padding-top: 80px;
+    background: url("../public/background1.jpg") top/cover;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 50px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home img {
+    height: 450px;
+}
+
+.text-1 {
+    font-size: 35px;
+}
+.text-2 {
+    font-size: 65px;
+	font-weight: 600;
+	margin-left: -3px;
+}
+.text-3{
+	font-size: 35px;
+	margin: 5px 0;
+}
+
+@media (min-width: 412px) and (max-width: 576px) {
+
+    
+    .text-1 {
+        font-size: 25px;
+    }
+    .text-2 {
+        font-size: 60px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    .text-3{
+        font-size: 27px;
+        margin: 5px 0;
+    }
+    
+    #cv {
+        width: 100vw;
+        height: 100vh;
+    }
+
+}
+
+
+/* About styling */
+
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: crimson;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Services styling */
+#icon {
+    color: crimson;
+    margin-left: 40%;
+    font-size: 50px;
+}
+
+/* Contact styling */
+#icon2 {
+    color: crimson;
+    font-size: 40px;
+}
+
+/* footer section styling */
+footer{
+	background: #111;
+	padding: 20px 23px;
+	color: #fff;
+    text-align: center;
+}
+footer span a{
+	color: crimson;
+	text-decoration: none;
+}
+footer span a:hover{
+	text-decoration: underline;
+}
+
+.page-content{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(230, 230, 230), white);
+}
+.auth-card{
+    background-color: white;
+    box-shadow: 0 3px 12px rgb(0 0 0 / 0.2);
+    border-radius: 20px;
+    padding: 10px 10%;
+}
+
+.auth-card img{
+    width: 100px;
+    height: 100px;
+}
+.service-btn{
+    background-color: white;
+    border: 1px solid rgb(220, 220, 220);
+    color: rgb(46, 46, 46);
+    height: 45px;
+    box-shadow: none;
+    width: 100%;
+}
+.btn-theme{
+    background-color: black !important;
+    color: white !important;
+    box-shadow: none !important;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
