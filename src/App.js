@@ -6,7 +6,7 @@ import Login from './pages/Login';
 import './index.css'
 import Signup from './pages/Signup'
 import Project from './pages/Project';
-import Typewriter from 'typewriter-effect';
+
 
 function App() {
   return (
